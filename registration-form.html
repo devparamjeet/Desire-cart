@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js">
+
+    </script>
+</head>
+    <style>
+        .header-border
+        {
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+        .s-icon
+        {
+            height: 30px;
+            width: 30px;
+            border: 1px solid white;
+            border-radius: 1px;
+            line-height: 30px;
+            background: white;
+            color: black;
+        }
+        .s-icon:hover
+        {
+            transform: rotate(360deg);
+            transition: all ease 1s;
+            background: transparent;
+            color: blue;
+        }
+        .s-c:hover
+        {
+            transform: rotate(360deg);
+            transition: all ease 1s;
+            background: transparent;
+            color: green;
+        }
+        .s-i:hover
+        {
+            transform: rotate(360deg);
+            transition: all ease 1s;
+            background: transparent;
+            color: rgb(214, 25, 104);
+        }
+        .s-y:hover
+        {
+            transform: rotate(360deg);
+            transition: all ease 1s;
+            background: transparent;
+            color: red;
+        }
+        .menu-text:hover
+        {
+            color: rgb(0, 60, 255) !important;
+            transition: all ease 1s !important;
+        }
+        .slider-height
+        {
+        max-height: 800px;
+        }
+        .btn-fix
+        {
+            position: relative;
+            top: 80%;
+            left: 40%;
+        }
+        .registration-back
+        {
+            background: url("images/registration-background.jpg");
+            background-size: 100% 100%;
+        }
+    </style>
+<body>
+    <div class="container-fluid">
+        <!-- Start Header -->
+        <div class="row header">
+            <div class="col-sm-12">
+                <div class="container">
+                    <div class="row text-center m-2">
+                        <div class="col-sm-4 header-border">
+                            <i class="fa-solid fa-envelope text-primary"></i> <span>Officialshadowx14@gmail.com</span>
+                        </div>
+                        <div class="col-sm-4 header-border">
+                            <i class="fa-solid fa-phone text-primary"></i> <span>+91 6294097292</span>
+                        </div>
+                        <div class="col-sm-4 header-border">
+                            <i class="fa-brands fa-whatsapp s-icon s-c"></i>
+                            <i class="fa-brands fa-facebook s-icon"></i>
+                            <i class="fa-brands fa-twitter s-icon"></i>
+                            <i class="fa-brands fa-instagram s-icon s-i"></i>
+                            <i class="fa-brands fa-youtube s-icon s-y"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Start logo -->
+        <div class="row menu">
+            <div class="col-sm-3 pt-2 text-center fs-3">
+                Desire<b class="text-primary">Cart<i class="fa-sharp fa-solid fa-cart-shopping"></i></b>
+            </div>
+            <div class="col-sm-6 pt-2">
+                <nav class="navbar bg-white">
+                    <div class="container">
+                      <form class="d-flex form-control border-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search Items" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+            <div class="col-sm-3 h2 text-center pt-2">
+                <i class="fa-sharp fa-solid fa-cart-shopping text-primary"  style="line-height: 60px;"></i>
+            </div>
+        </div>
+        <!-- End logo -->
+        <!-- Start Menu  -->
+        <div class="row sticky-top bg-dark">
+            <div class="col-sm-3 text-end py-2">
+                <a class="fs-4 text-primary text-decoration-none fw-bold" href="index.html">DESIRECART</a>
+            </div>
+            <div class="col-sm-9 ps-5">
+                <!--Starting of Menu bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid ps-2">
+                      <a class="navbar-brand text-white fs-6 menu-text" href="index.html"><i class="fa-solid fa-house"></i> HOME</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white menu-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-brands fa-product-hunt"></i> Product
+                                    </a>
+                                    <!--  starting of dropdown menu -->
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item menu-text" href="mens-home-tshirt.html">Men's Category</a></li>
+                                    <li><a class="dropdown-item menu-text" href="womens-home-page.html">Women's Category</a></li>
+                                    <li><a class="dropdown-item menu-text" href="kids-home-page.html">Kids</a></li>
+                                    </ul>
+                                    <!-- ending of dropdown menu -->
+                                </li>
+                          <!-- dropdown ending -->
+                          <li class="nav-item">
+                            <a class="nav-link active text-white menu-text" aria-current="page" href="#"><i class="fa-solid fa-cart-arrow-down"></i> My Orders</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white menu-text" href="myprofile.html"><i class="fa-solid fa-user-shield"></i> Profile</a>
+                          </li>
+                    
+                          <li class="nav-item">
+                            <a class="nav-link text-white menu-text" href="customer-support.html"><i class="fa-solid fa-headset"></i> Customer Support</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white menu-text" href="registration-form.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white menu-text" href="#"><i class="fa-solid fa-key"></i>
+                             <!--login botton -->
+                             <span data-bs-toggle="modal" data-bs-target="#login">Sign In</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                <!--End of Menu bar -->
+            </div>
+        </div>
+        <!-- End Menu  -->
+        <!-- start Login -->
+        <!-- Modal -->
+        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <span class="text-dark"><p class="h4 text-dark text-center">WELCOME BACK! <b class="text-primary">LOGIN PLEASE
+                            <i class="fa-brands fa-keycdn fa-spin"></i></b>
+                        </p></span>
+                        <hr>
+                        <br>
+                        <span class="h6 fs-6 text-dark">Username:</span>
+                        <input type="text" class="form-control mb-4" placeholder="Your Username here.." required>
+                        <span class="h6 fs-6 text-dark">Password:</span>
+                        <input type="password" class="form-control mb-3" placeholder="Your Password.." required>
+                        <div class="row">
+                            <div class="col-sm-3 mx-auto">
+                                <input type="submit" value="LOGIN" class="btn btn-primary px-4 py-2">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+         </div>
+        <!-- end Login -->
+        
+        <!-- start registration form -->
+            <div class="row registration-back">
+                <div class="col-sm-8 m-4 mx-auto bg-primary text-center text-white pt-3 ">
+                    <p class="h3">REGISTRATION FORM</p>
+                    <form action="" method="post">
+                    <div class="row">
+                        <div class="col-sm-6 text-start">
+                            Name:
+                            <input type="text" placeholder="Enter your name" class="form-control bg-dark text-white mb-4">
+                            Password:
+                            <input type="password" placeholder="Enter your Password" class="form-control bg-dark text-white mb-4">
+                            Email:
+                            <input type="email" placeholder="Enter your email" class="form-control bg-dark text-white mb-4">
+                        </div>
+                        <div class="col-sm-6 text-start">
+                            Mobile:
+                            <input type="number" placeholder="Enter your nobile no" class="form-control bg-dark text-white mb-4">
+                            Confirm Password:
+                            <input type="password" placeholder="Enter confirm Password" class="form-control bg-dark text-white mb-4">
+                            Email:
+                            <input type="file" class="form-control bg-dark text-white mb-4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-start mb-5">
+                            Address:
+                            <textarea placeholder="Enter your Address" class="form-control"></textarea>
+                            <input type="radio" required> I accept the Terms of Use & Privacy Policy
+                        </div>
+                    </div>
+                    <span class="btn btn-dark text-white">Register Now</span>
+                    <p class="pt-3">Already have an account? <a href="#" class="text-decoration-none text-dark fw-bold">
+                        <!--login botton -->
+                        <span data-bs-toggle="modal" data-bs-target="#login">LOGIN</span>
+                    </a></p>
+                    </form>
+                </div>
+            </div>
+        <!-- End registration form -->
+
+        <!-- Start footer -->
+        <div class="row">
+            <div class="col-sm-12 bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10">
+                            <div class="row">
+                                <div class="col-sm-4 text-white">
+                                    <p class="text-start pt-4 fs-6 fw-bold">Desire <span class="text-primary">Cart <i class="fa-solid fa-cart-shopping"></i></span></p>
+                                    <p class="">Address :Lucknow, Uttar Pradesh, 220102</p>
+                                    <p>Phone : 6294097292</p>
+                                    <p>Email : Officialshadowx14@gmail.com</p>
+                                </div>
+                                <div class="col-sm-4 pt-4 text-white">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p class="fw-bold">Information</p>
+                                            <p>About Us</p>
+                                            <p>Checkout</p>
+                                            <p>Contact</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="fw-bold">My Account</p>
+                                            <p>My Account</p>
+                                            <p>Contact</p>
+                                            <p>Shopping Cart</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 pt-4 text-white">
+                                    <p class="fw-bold">Join Our Newsletter Now</p>
+                                    <p>Get E-mail updates about our latest shop and special offers.</p>
+                                    <!-- feedback -->
+                                    <div class="input-group">
+                                        <input type="email" placeholder="Enter Your Mail" class="form-control" aria-label="feedback">
+                                        <span class="input-group-text text-white btn bg-primary border-0">SUBSCRIBE</span>
+                                      </div>
+                                    <!-- end feedback -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End footer -->
+    </div>
+</body>
+</html>
